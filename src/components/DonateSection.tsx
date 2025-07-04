@@ -17,7 +17,7 @@ const DonateSection = () => {
         
         {/* Available donation methods */}
         {/* DEVELOPER NOTE: showContribute={false} hides "How to Contribute" section for home page */}
-        <DonationMethods showContribute={false} />
+        {/* <DonationMethods showContribute={false} /> */}
         
         {/* Alternative ways to support beyond money */}
         <AlternativeSupport />

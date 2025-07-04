@@ -42,25 +42,27 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Personal Story */}
           <div className="space-y-6">
-            <Card className="card-sacred">
+              <Card className="card-sacred">
               <h3 className="text-2xl font-bold text-dharma-brown mb-4">
-                The Dharmic Developer
+                The 5 Years of Dharmic Yoga– A Journey Within
               </h3>
               <div className="space-y-4 text-dharma-stone leading-relaxed">
+                <p>Five years ago, I began yoga in search of peace, unaware it would shape my life’s purpose. 
+                  What started as a personal practice evolved into a mission to teach, heal, and serve. 
+                  From mastering asanas to studying sacred texts </p>
                 <p>
-                  Like the <span className="text-dharma-gold font-medium">Bhagavad Gita</span> teaches us about 
-                  performing our duty without attachment to results, I approach coding as a form of 
-                  <span className="text-krishna-primary font-medium"> Karma Yoga</span> - selfless service through technology.
+                  Like the <span className="text-dharma-gold font-medium">Bhagavad Gita</span>  yoga became a spiritual path. After completing my 200-hour certification, 
+                  I’ve taught over 700 classes, blending traditional wisdom with modern techniques. Guided by 
+                  <span className="text-krishna-primary font-medium"> Karma Yoga</span> - I serve with compassion and mindfulness—on the mat and in life. 
+                  Inspired by the principle of <span className="text-dharma-gold font-medium"> "तत् त्वम् असि"</span>, 
+                  I see the divine in every student, user, and stakeholder.
                 </p>
+
                 <p>
-                  Every line of code is written with mindfulness, every project approached with the 
-                  intention to serve. My development philosophy is rooted in the principle of 
-                  <span className="text-dharma-gold font-medium"> "तत् त्वम् असि"</span> - recognizing the divine in all users and stakeholders.
-                </p>
-                <p>
-                  Through meditation and coding, I've discovered that both require similar qualities: 
-                  patience, focus, continuous learning, and the wisdom to debug not just code, 
-                  but our own limitations.
+                  Whether teaching or practices, I approach each act with intention. 
+                  Yoga and meditation have shown me that true growth requires 
+                  patience, focus, humility, and the courage to face our own limitations. 
+                  Today, yoga is not just a practice—it is my way of life
                 </p>
               </div>
             </Card>
@@ -72,10 +74,10 @@ const AboutSection = () => {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {[
-                  'React', 'TypeScript', 'Node.js', 
-                  'Python', 'PostgreSQL', 'MongoDB',
-                  'Docker', 'AWS', 'Firebase',
-                  'TailwindCSS', 'Framer Motion', 'Next.js'
+                    'Flexibility ', 'Pranayama', 'Balance ', 
+                  'Strength ', 'Body Awareness', 'Dharana',
+                  'Stress Management ', 'Self-Awareness', 'Dhyana',
+                  'Mantra Practice', 'Ashtanga Yoga', 'Tapas'
                 ].map((skill) => (
                   <div 
                     key={skill}

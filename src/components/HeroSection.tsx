@@ -178,7 +178,7 @@ const HeroSection = () => {
 
       {/* Main Content Container */}
       <motion.div
-        className="relative z-10 container mx-auto px-6 text-center pt-16"
+        className="relative z-10 container mx-auto px-6 text-center pt-16 mt-7"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -359,7 +359,7 @@ const HeroSection = () => {
 
         {/* Animated Call to Action Buttons */}
         <motion.div
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col mb-20 mt-12 sm:flex-row gap-4 justify-center items-center"
           variants={itemVariants}
         >
           <motion.div
@@ -408,7 +408,7 @@ const HeroSection = () => {
 
         {/* Animated Scroll Indicator */}
         <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-0 left-1/4 transform -translate-x-1/2"
           variants={itemVariants}
           animate={{
             y: [0, 10, 0],
@@ -431,7 +431,7 @@ const HeroSection = () => {
                 ease: [0.25, 0.1, 0.25, 1],
               }}
             >
-              Scroll to explore
+              {/* Scroll to explore */}
             </motion.p>
             <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center">
               <motion.div
