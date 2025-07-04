@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:wght@400&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Divine Portfolio Design System - Merging Krishna's wisdom with modern aesthetics */
+
+@layer base {
+  :root {
+    /* Krishna Divine Blues */
+    --krishna-primary: 231 48% 48%;
+    --krishna-secondary: 207 90% 54%; 
+    --krishna-light: 199 84% 55%;
+    --krishna-glow: 194 100% 85%;
+    
+    /* Dharma Earth Tones */
+    --dharma-brown: 15 25% 28%;
+    --dharma-sand: 37 27% 82%;
+    --dharma-stone: 30 10% 66%;
+    --dharma-gold: 45 86% 58%;
+    
+    /* Sacred Gradients */
+    --gradient-divine: linear-gradient(135deg, hsl(var(--krishna-primary)), hsl(var(--krishna-light)));
+    --gradient-dharma: linear-gradient(135deg, hsl(var(--dharma-brown)), hsl(var(--dharma-gold)));
+    --gradient-sacred: linear-gradient(180deg, hsl(var(--krishna-glow) / 0.1), hsl(var(--dharma-sand) / 0.1));
+    
+    /* Sacred Shadows */
+    --shadow-divine: 0 20px 60px -10px hsl(var(--krishna-primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--krishna-glow) / 0.4);
+    --shadow-dharma: 0 10px 30px -10px hsl(var(--dharma-brown) / 0.2);
+    
+    /* Base System Colors */
+    --background: var(--dharma-sand);
+    --foreground: var(--dharma-brown);
+    
+    --card: 0 0% 100%;
+    --card-foreground: var(--dharma-brown);
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--dharma-brown);
+    
+    --primary: var(--krishna-primary);
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: var(--dharma-sand);
+    --secondary-foreground: var(--dharma-brown);
+    
+    --muted: 37 20% 88%;
+    --muted-foreground: var(--dharma-stone);
+    
+    --accent: var(--krishna-light);
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 37 15% 85%;
+    --input: 37 15% 85%;
+    --ring: var(--krishna-primary);
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+}
+
+@layer components {
+  /* Sacred Typography */
+  .text-sanskrit {
+    @apply font-sanskrit text-lg tracking-wide;
+  }
+  
+  .text-divine {
+    @apply bg-gradient-to-r from-[hsl(var(--krishna-primary))] to-[hsl(var(--krishna-light))] bg-clip-text text-transparent;
+  }
+  
+  .text-sacred {
+    @apply text-[hsl(var(--dharma-brown))] font-medium;
+  }
+  
+  /* Sacred Buttons */
+  .btn-divine {
+    @apply bg-[hsl(var(--krishna-primary))] hover:bg-[hsl(var(--krishna-secondary))] text-white px-8 py-4 rounded-xl font-medium tracking-wide transition-all duration-300 shadow-[var(--shadow-divine)] hover:shadow-[var(--shadow-glow)] hover:scale-105;
+  }
+  
+  .btn-dharma {
+    @apply bg-[hsl(var(--dharma-gold))] hover:bg-[hsl(var(--dharma-brown))] text-[hsl(var(--dharma-brown))] hover:text-white px-8 py-4 rounded-xl font-medium tracking-wide transition-all duration-300 shadow-[var(--shadow-dharma)] hover:scale-105;
+  }
+  
+  /* Sacred Cards */
+  .card-sacred {
+    @apply bg-white/80 backdrop-blur-sm border border-[hsl(var(--border))] rounded-2xl p-8 shadow-[var(--shadow-dharma)] hover:shadow-[var(--shadow-divine)] transition-all duration-500 hover:scale-[1.02];
+  }
+  
+  /* Divine Animations */
+  .floating {
+    animation: floating 6s ease-in-out infinite;
+  }
+  
+  .pulse-divine {
+    animation: pulse-divine 4s ease-in-out infinite;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--krishna-glow) / 0.5);
+  }
+}
+
+@layer utilities {
+  /* Sacred Gradients */
+  .bg-gradient-divine {
+    background: var(--gradient-divine);
+  }
+  
+  .bg-gradient-dharma {
+    background: var(--gradient-dharma);
+  }
+  
+  .bg-gradient-sacred {
+    background: var(--gradient-sacred);
+  }
+}
+
+/* Sacred Animations */
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes pulse-divine {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 hsl(var(--krishna-glow) / 0.7);
+  }
+  50% { 
+    box-shadow: 0 0 0 20px hsl(var(--krishna-glow) / 0);
+  }
+}
