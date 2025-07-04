@@ -25,17 +25,33 @@ const ArticleCard = ({ article, index }: ArticleCardProps) => {
   // 3. Add route to src/App.tsx
   // 4. Update videoUrls array below with corresponding YouTube video
   // 5. Update handleReadArticle function with new route
-  const videoUrls = [
-    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Yoga Practice Patanjali video
-    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Ashtanga Foundation video
-    "https://www.youtube.com/embed/dQw4w9WgXcQ"  // Default for other articles
+const videoUrls = [
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Yoga Practice Patanjali
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Ashtanga Foundation
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Ashtavangani Part 1
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Ashtavangani Part 2
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Siddhis Meditation Part 1
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Siddhis Meditation Part 2
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Kaivalyam
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Overview of Yoga Sutras 1
+    "https://www.youtube.com/embed/dQw4w9WgXcQ", // Overview of Yoga Sutras 2
   ];
+
 
   const handleReadArticle = () => {
     // DEVELOPER NOTE: Opens article page with embedded YouTube video
     // TO ADD NEW ARTICLE ROUTE: Add new condition here with proper path
     if (index === 0) window.open('/articles/yoga-practice-patanjali', '_blank');
     else if (index === 1) window.open('/articles/ashtanga-foundation', '_blank');
+        else if (index === 2) window.open('/articles/ashtanga-foundation', '_blank');
+    else if (index === 3) window.open('/articles/ashtanga-foundation', '_blank');
+        else if (index === 4) window.open('/articles/ashtanga-foundation', '_blank');
+    else if (index === 5) window.open('/articles/ashtanga-foundation', '_blank');
+        else if (index === 6) window.open('/articles/ashtanga-foundation', '_blank');
+    else if (index === 7) window.open('/articles/ashtanga-foundation', '_blank');
+        else if (index === 8) window.open('/articles/ashtanga-foundation', '_blank');
+    else if (index === 9) window.open('/articles/ashtanga-foundation', '_blank');
+    
     else window.open('/articles/coming-soon', '_blank');
   };
 

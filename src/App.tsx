@@ -25,11 +25,18 @@ import NotFound from "./pages/NotFound";
 // Article pages
 import YogaPracticePatanjali from "./pages/articles/YogaPracticePatanjali";
 import AshtangaFoundation from "./pages/articles/AshtangaFoundation";
+import Ashtavanganipart1 from "./pages/articles/Ashtavanganipart1";
+import Ashtavanganipart2 from "./pages/articles/Ashtavanganipart2";
+
 import ComingSoon from "./pages/articles/ComingSoon";
 
 // Recording pages
 import VinyasaSession from "./pages/recordings/VinyasaSession";
 import BhagavadGitaChanting from "./pages/recordings/BhagavadGitaChanting";
+import SiddhismeditationPart1 from "./pages/articles/SiddhismeditationPart1";
+import YogaSutrasPart1 from "./pages/articles/YogaSutrasPart1";
+import SiddhismeditationPart2 from "./pages/articles/SiddhismeditationPart2";
+import AshtangaYoga from "./pages/articles/AshtangaYoga";
 
 const queryClient = new QueryClient();
 
@@ -55,11 +62,23 @@ const App = () => (
             {/* Article subroutes */}
             <Route path="/articles/yoga-practice-patanjali" element={<YogaPracticePatanjali />} />
             <Route path="/articles/ashtanga-foundation" element={<AshtangaFoundation />} />
+            <Route path="/articles/Ashtavangani-part1" element={<Ashtavanganipart1 />}/>
+            <Route path="/articles/Ashtavangani-part2" element={<Ashtavanganipart2 />}/>
+            <Route path="/articles/Siddhis-Meditation-Part1" element={<SiddhismeditationPart1 />}/>
+            <Route path="/articles/YogaSutrasPart1" element={<YogaSutrasPart1 />} />
+            <Route path="/articles/Siddhis-Meditation-Part1" element={<SiddhismeditationPart1 />}/>
+            <Route path="/articles/Siddhis-Meditation-Part2" element={<SiddhismeditationPart2 />}/>
+            <Route path="/articles/AshtangaYoga" element={<AshtangaYoga />}/>
+            
+            
             <Route path="/articles/coming-soon" element={<ComingSoon />} />
+
 
             {/* Recording subroutes */}
             <Route path="/recordings/vinyasa-session" element={<VinyasaSession />} />
             <Route path="/recordings/bhagavad-gita-chanting" element={<BhagavadGitaChanting />} />
+
+
 
             {/* Always keep this as the last route */}
             <Route path="*" element={<NotFound />} />
