@@ -20,58 +20,77 @@ const WhySiteSection = () => {
           </div>
         </div>
 
-        {/* Main Content */}
-        <div className="max-w-4xl mx-auto space-y-8">
-          {/* Opening Quote */}
-          <Card className="card-sacred">
-            <div className="text-center p-8">
-              <div className="text-5xl mb-6">🌟</div>
-              <blockquote className="text-lg text-dharma-stone leading-relaxed italic">
-                "With the renewed interest in health and subtle body topics, there is a glut of information on all aspects of Yoga. The Indian mystic and Spiritual teacher, Sri M, says that these days there are more teachers than students. So what is the need for another website on this topic?"
-              </blockquote>
-            </div>
-          </Card>
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Left Content - spans two columns */}
+          <div className="lg:col-span-2 space-y-8">
+            {/* Opening Quote */}
+            <Card className="card-sacred">
+              <div className="text-center p-8">
+                <div className="text-5xl mb-6">🌟</div>
+                <blockquote className="text-lg text-dharma-stone leading-relaxed italic">
+                  "With the renewed interest in health and subtle body topics, there is a glut of information on all aspects of Yoga. The Indian mystic and Spiritual teacher, Sri M, says that these days there are more teachers than students. So what is the need for another website on this topic?"
+                </blockquote>
+              </div>
+            </Card>
 
-          {/* Sanskrit Wisdom */}
-          <Card className="card-sacred">
-            <div className="text-center p-8">
-              <p className="text-sanskrit text-3xl text-krishna-primary glow-text mb-4">
-                तत्र ध्यानजम् अनाशयम्
-              </p>
-              <p className="text-xl text-dharma-stone font-medium mb-4">
-                Tatra Dhyanajam Anashayam (Yoga Sutra 4.6)
-              </p>
-              <p className="text-lg text-dharma-brown">
-                "An action done from a meditative state of mind leaves no residues of attachment"
-              </p>
-            </div>
-          </Card>
+            {/* Sanskrit Wisdom */}
+            <Card className="card-sacred">
+              <div className="text-center p-8">
+                <p className="text-sanskrit text-3xl text-krishna-primary glow-text mb-4">
+                  तत्र ध्यानजम् अनाशयम्
+                </p>
+                <p className="text-xl text-dharma-stone font-medium mb-4">
+                  Tatra Dhyanajam Anashayam (Yoga Sutra 4.6)
+                </p>
+                <p className="text-lg text-dharma-brown">
+                  "An action done from a meditative state of mind leaves no residues of attachment"
+                </p>
+              </div>
+            </Card>
 
-          {/* Main Content */}
-          <Card className="card-sacred">
-            <div className="p-8 space-y-6">
-              <p className="text-dharma-stone leading-relaxed">
-                Therefore ancient texts, written by enlightened sages in a meditative state of mind and studied for thousands of years, are worth studying because they ground the mind and make it conducive for better thinking. This site aims to bring together such pieces of information on yoga by providing links, connecting its various aspects, like asanas and ayurveda and provide a repository of information for the like-minded.
-              </p>
-              
-              <p className="text-dharma-stone leading-relaxed">
-                The yogic texts we know of today are a small fraction of what was available many hundreds of years ago. They were destroyed by invasions and also by insects :). Many yogis gave up their lives trying to preserve them. Some Yogis fled to Tibet, to escape the invaders where the texts and the techniques were preserved in monasteries in the Tibetan language. Others fled to Southern India which was spared a little more from the invasions than was Northern India.
-              </p>
-              
-              <p className="text-dharma-stone leading-relaxed">
-                While invasions aren't a major cause for concern, and certainly not insects, for preserving these ancient yogic techniques these days, it is dilution and misinterpretation by some teachers, from a sense of ego, that pose problems. My goal is for the website I maintain, to be a place where people can search and get authentic links to the scriptural interpretations as they had been interpreted for thousands of years.
-              </p>
-            </div>
-          </Card>
+            {/* Main Content */}
+            <Card className="card-sacred">
+              <div className="p-8 space-y-6">
+                <p className="text-dharma-stone leading-relaxed">
+                  Therefore ancient texts, written by enlightened sages in a meditative state of mind and studied for thousands of years, are worth studying because they ground the mind and make it conducive for better thinking. 
+                  </p>
+                  <p className="text-dharma-stone leading-relaxed">
+                  This site aims to bring together such pieces of information on yoga by providing links, connecting its various aspects, like asanas and ayurveda and provide a repository of information for the like-minded.
+                </p>
 
-          {/* Mission Statement */}
-          <Card className="card-sacred">
-            <div className="p-8">
-              <h3 className="text-2xl font-bold text-dharma-brown mb-6 text-center">
-                Our Sacred Mission
-              </h3>
-              
-              <div className="grid md:grid-cols-2 gap-8">
+                <p className="text-dharma-stone leading-relaxed">
+                  The yogic texts we know of today are a small fraction of what was available many hundreds of years ago. They were destroyed by invasions and also by insects :). Many yogis gave up their lives trying to preserve them. 
+                  </p>
+                   <p className="text-dharma-stone leading-relaxed">
+                  Some Yogis fled to Tibet, to escape the invaders where the texts and the techniques were preserved in monasteries in the Tibetan language. Others fled to Southern India which was spared a little more from the invasions than was Northern India.
+                </p>
+
+                <p className="text-dharma-stone leading-relaxed">
+                  While invasions aren't a major cause for concern, and certainly not insects, for preserving these ancient yogic techniques these days, it is dilution and misinterpretation by some teachers, from a sense of ego, that pose problems.
+
+                </p>
+                                  
+                    <p className="text-dharma-stone leading-relaxed">
+                   My goal is for the website I maintain, to be a place where people can search and get authentic links to the scriptural interpretations as they had been interpreted for thousands of years.
+                   </p>
+              </div>
+
+
+            </Card>
+
+       
+          </div>
+
+          {/* Right Sidebar Cards */}
+          <div className="space-y-8">
+            {/* Mission Statement */}
+            <Card className="card-sacred">
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-dharma-brown mb-6 text-center">
+                  Our Sacred Mission
+                </h3>
+
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <div className="text-2xl">🔍</div>
@@ -82,7 +101,7 @@ const WhySiteSection = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-3">
                     <div className="text-2xl">📚</div>
                     <div>
@@ -92,7 +111,7 @@ const WhySiteSection = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-3">
                     <div className="text-2xl">🤝</div>
                     <div>
@@ -102,9 +121,7 @@ const WhySiteSection = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-                
-                <div className="space-y-4">
+
                   <div className="flex items-start space-x-3">
                     <div className="text-2xl">🌐</div>
                     <div>
@@ -114,7 +131,7 @@ const WhySiteSection = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-3">
                     <div className="text-2xl">⚖️</div>
                     <div>
@@ -124,7 +141,7 @@ const WhySiteSection = () => {
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start space-x-3">
                     <div className="text-2xl">🕊️</div>
                     <div>
@@ -136,27 +153,30 @@ const WhySiteSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </Card>
-
-          {/* Historical Context */}
-          <Card className="card-sacred">
-            <div className="p-8">
-              <h3 className="text-xl font-bold text-dharma-brown mb-4 text-center">
-                Preserving the Lineage
-              </h3>
-              <div className="bg-gradient-sacred p-6 rounded-lg">
-                <p className="text-dharma-stone leading-relaxed mb-4">
-                  The ancient wisdom of yoga has survived countless challenges - invasions, natural disasters, and the passage of time. Many brave souls sacrificed everything to preserve these teachings. Some fled to Tibet, others to Southern India, carrying with them the precious knowledge that forms the foundation of authentic yoga practice today.
-                </p>
-                <p className="text-dharma-stone leading-relaxed">
-                  In our modern age, the challenge is different but equally important: maintaining the purity and authenticity of these teachings amidst commercialization and misinterpretation. This site stands as a beacon for those seeking the true path, unmarked by ego or commercial interests.
-                </p>
+             {/* Historical Context */}
+             {/* <Card> */}
+              <div className="p-8">
+                <h3 className="text-xl font-bold text-dharma-brown mb-4 text-center">
+                  Preserving the Lineage
+                </h3>
+                <div className="bg-gradient-sacred p-6 rounded-lg">
+                  <p className="text-dharma-stone leading-relaxed mb-4">
+The ancient wisdom of yoga has endured invasions, natural disasters, and centuries of change, safeguarded by brave souls who sacrificed everything to preserve its essence—some fleeing to Tibet, others to Southern India, carrying with them the roots of authentic practice.
+                  </p>
+                  <p className="text-dharma-stone leading-relaxed">
+ Today, the challenge lies in protecting its purity from commercialization and distortion. This site stands as a beacon for those seeking the true path of yoga, untouched by ego or profit.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Card>
+   {/* </Card> */}
+            </Card>
+           
+          
+          </div>
+        </div>
 
-          {/* Call to Action */}
+        {/* Bottom CTA */}
+        <div className="mt-12">
           <Card className="card-sacred">
             <div className="text-center p-8">
               <div className="text-5xl mb-6">🙏</div>
@@ -166,7 +186,7 @@ const WhySiteSection = () => {
               <p className="text-dharma-stone mb-6">
                 Together, we can preserve and share the authentic teachings of yoga for future generations. Every seeker, every student, every teacher who values truth contributes to this noble cause.
               </p>
-              
+
               <div className="bg-krishna-primary/10 p-6 rounded-lg">
                 <p className="text-sanskrit text-lg text-krishna-primary glow-text mb-2">
                   सत्यमेव जयते नानृतम्
