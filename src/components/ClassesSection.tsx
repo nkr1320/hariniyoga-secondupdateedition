@@ -11,12 +11,12 @@ const ClassesSection = () => {
       title: "Gentle Vinyasa Krama Yoga",
       instructor: "Vedant Thyagaraj",
       schedule: "Sundays 9:00am to 10:15am Pacific Time",
-      description: "Yogasthah kuru karmani: Be established in yoga and then engage yourself in activities. - Bhagavad Gita",
-      details: "A wonderful way to bring yourself to a yogic state of centeredness and bliss before beginning the activities of the work week.",
-      method: "The methodical, step-by-step approach of Vinyasa Krama Yoga includes well-crafted asana sequences that combine energizing as well as relaxing practices.",
-      contact: "Free classes offered via zoom. Please email info@ekashri.yoga for link to join.",
+      description: "Yogasthah kuru karmani: Be established in yoga & then engage yourself in activities.- Bhagavad Gita",
+      details: "Start your week in a yogic state of balance and bliss.",
+      method: "Vinyasa Krama Yoga guides you through step-by-step asana sequences that both energize and relax the body and mind.",
+      contact: "  classes offered via zoom. Please email info@ekashri.yoga for link to join.",
       image: "🧘‍♀️",
-      status: "Free",
+      // status: "paid ",
       type: "Weekly Class"
     },
     {
@@ -26,9 +26,9 @@ const ClassesSection = () => {
       description: "स्थिरसुखमासनम्: Asana should be steady and comfortable. - Yoga Sutra 2.46",
       details: "Build a strong foundation in traditional Hatha Yoga with focus on proper alignment and breathing techniques.",
       method: "Classical Hatha Yoga approach with sustained postures, mindful transitions, and pranayama practice.",
-      contact: "Free classes offered via zoom. Please email info@ekashri.yoga for link to join.",
+      contact: " classes offered via zoom. Please email info@ekashri.yoga for link to join.",
       image: "🕉️",
-      status: "Free",
+      // status: "paid ",
       type: "Weekly Class"
     },
     {
@@ -38,9 +38,9 @@ const ClassesSection = () => {
       description: "प्रत्याहार: Withdrawal of the senses leads to inner peace. - Yoga Sutra 2.54",
       details: "Deeply relaxing practice combining gentle poses, pranayama, and guided meditation for complete restoration.",
       method: "Gentle, supported postures combined with breathing practices and meditation techniques for deep relaxation.",
-      contact: "Free classes offered via zoom. Please email info@ekashri.yoga for link to join.",
+      contact: " classes offered via zoom. Please email info@ekashri.yoga for link to join.",
       image: "🌙",
-      status: "Free",
+      // status: " paid",
       type: "Weekly Class"
     },
     {
@@ -68,7 +68,7 @@ const ClassesSection = () => {
 
   const upcomingWorkshops = [
     {
-      title: "200 Hour Teacher Training Program",
+      title: "90 Hour Teacher Training Program",
       subtitle: "Vinyasa Krama Yoga",
       date: "July 2022 to October 2022",
       description: "Comprehensive yoga teacher training program covering philosophy, anatomy, and teaching methodology",
@@ -111,15 +111,15 @@ const ClassesSection = () => {
           <h3 className="text-3xl font-bold text-dharma-brown mb-8 text-center">
             Yoga Classes
           </h3>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {classes.filter(c => c.type === "Weekly Class").map((cls, index) => (
               <Card key={index} className="card-sacred">
                 <div className="text-center mb-6">
-                  <div className="text-6xl mb-4">{cls.image}</div>
-                  <Badge className="bg-green-100 text-green-800 mb-4">
+                  <div className="text-3xl mb-4">{cls.image}</div>
+                  {/* <Badge className="bg-green-100 text-green-800 mb-4">
                     {cls.status}
-                  </Badge>
-                  <h4 className="text-2xl font-bold text-dharma-brown mb-2">
+                  </Badge> */}
+                  <h4 className="text-1xl font-bold text-dharma-brown mb-2">
                     {cls.title}
                   </h4>
                   <p className="text-krishna-primary font-semibold mb-2">
@@ -130,7 +130,7 @@ const ClassesSection = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 text-dharma-stone">
+                <div className="space-y-3 text-dharma-stone">
                   <p className="italic font-medium text-center">
                     "{cls.description}"
                   </p>
