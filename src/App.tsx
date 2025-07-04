@@ -1,9 +1,15 @@
+// ✅ FIXED VERSION OF YOUR MAIN APP FILE
+// Ensures client-side routing works in Vercel deployment
+// Add "rewrites" in vercel.json for catch-all fallback to index.html
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider } from "react-helmet-async";
+
+// All pages
 import Index from "./pages/Index";
 import Offers from "./pages/Offers";
 import Classes from "./pages/Classes";
@@ -15,9 +21,13 @@ import WhySite from "./pages/WhySite";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+
+// Article pages
 import YogaPracticePatanjali from "./pages/articles/YogaPracticePatanjali";
 import AshtangaFoundation from "./pages/articles/AshtangaFoundation";
 import ComingSoon from "./pages/articles/ComingSoon";
+
+// Recording pages
 import VinyasaSession from "./pages/recordings/VinyasaSession";
 import BhagavadGitaChanting from "./pages/recordings/BhagavadGitaChanting";
 
@@ -41,12 +51,17 @@ const App = () => (
             <Route path="/why-site" element={<WhySite />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/contact" element={<Contact />} />
+
+            {/* Article subroutes */}
             <Route path="/articles/yoga-practice-patanjali" element={<YogaPracticePatanjali />} />
             <Route path="/articles/ashtanga-foundation" element={<AshtangaFoundation />} />
             <Route path="/articles/coming-soon" element={<ComingSoon />} />
+
+            {/* Recording subroutes */}
             <Route path="/recordings/vinyasa-session" element={<VinyasaSession />} />
             <Route path="/recordings/bhagavad-gita-chanting" element={<BhagavadGitaChanting />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+
+            {/* Always keep this as the last route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

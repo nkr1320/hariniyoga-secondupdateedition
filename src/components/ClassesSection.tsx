@@ -37,7 +37,7 @@ const ClassesSection = () => {
       schedule: "Fridays 6:00pm to 7:30pm Pacific Time", 
       description: "प्रत्याहार: Withdrawal of the senses leads to inner peace. - Yoga Sutra 2.54",
       details: "Deeply relaxing practice combining gentle poses, pranayama, and guided meditation for complete restoration.",
-      method: "Gentle, supported postures combined with breathing practices and meditation techniques for deep relaxation.",
+      method: "Supported postures combined with breathing practices & meditation techniques for deep relaxation.",
       contact: " classes offered via zoom. Please email info@ekashri.yoga for link to join.",
       image: "🌙",
       // status: " paid",
