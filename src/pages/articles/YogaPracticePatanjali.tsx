@@ -1,20 +1,35 @@
+// Importing Helmet for setting <head> content like title and meta
 import { Helmet } from 'react-helmet-async';
+
+// Importing common site layout components
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 
+// Functional component for this yoga page
 const YogaPracticePatanjali = () => {
   return (
     <>
+      {/* Setting page title and meta tags using Helmet */}
       <Helmet>
         <title>The Yoga Practice as defined by Patanjali - Harini Yoga</title>
-        <meta name="description" content="Understanding the fundamental principles of yoga as laid out in the Yoga Sutras of Patanjali." />
+        <meta
+          name="description"
+          content="Understanding the fundamental principles of yoga as laid out in the Yoga Sutras of Patanjali."
+        />
       </Helmet>
+
+      {/* Page wrapper with top padding to avoid nav overlap */}
       <div className="min-h-screen pt-20">
+        {/* Top navigation bar */}
         <Navigation />
+
+        {/* Main section with background and spacing */}
         <section className="py-20 bg-gradient-sacred">
           <div className="container mx-auto px-6 max-w-4xl">
+            {/* Main content wrapped in styled card */}
             <Card className="card-sacred">
+              {/* Header section with icon and title */}
               <div className="text-center mb-8">
                 <div className="text-6xl mb-4">🧘‍♀️</div>
                 <h1 className="text-3xl md:text-4xl font-bold text-dharma-brown mb-4">
@@ -25,7 +40,7 @@ const YogaPracticePatanjali = () => {
                 </p>
               </div>
 
-              {/* YouTube Video Embed */}
+              {/* Embedded YouTube video */}
               <div className="mb-8">
                 <div className="aspect-video">
                   <iframe
@@ -37,8 +52,9 @@ const YogaPracticePatanjali = () => {
                 </div>
               </div>
 
-              {/* Article Content */}
+              {/* Article content with styling */}
               <div className="prose prose-lg max-w-none space-y-6 text-dharma-stone">
+                {/* Sanskrit quote section with glow and styling */}
                 <div className="bg-krishna-primary/10 p-6 rounded-lg text-center">
                   <p className="text-sanskrit text-xl text-krishna-primary glow-text mb-2">
                     योगश्चित्तवृत्तिनिरोधः
@@ -48,16 +64,20 @@ const YogaPracticePatanjali = () => {
                   </p>
                 </div>
 
-                <h2 className="text-2xl font-bold text-dharma-brown">Introduction to Patanjali's Definition</h2>
+                {/* Introduction heading and paragraph */}
+                <h2 className="text-2xl font-bold text-dharma-brown">
+                  Introduction to Patanjali's Definition
+                </h2>
                 <p>
-                  The sage Patanjali, in his foundational text the Yoga Sutras, provides us with the most comprehensive 
-                  and authoritative definition of yoga. Written approximately 2,000 years ago, this timeless wisdom 
+                  The sage Patanjali, in his foundational text the Yoga Sutras, provides us with the most comprehensive
+                  and authoritative definition of yoga. Written approximately 2,000 years ago, this timeless wisdom
                   continues to guide practitioners on the path of self-realization.
                 </p>
 
+                {/* Eight limbs of yoga section */}
                 <h3 className="text-xl font-bold text-dharma-brown">The Eight-Fold Path</h3>
                 <p>
-                  Patanjali outlines the Ashtanga Yoga, or eight-limbed path, which serves as a complete guide for 
+                  Patanjali outlines the Ashtanga Yoga, or eight-limbed path, which serves as a complete guide for
                   spiritual development:
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
@@ -71,13 +91,15 @@ const YogaPracticePatanjali = () => {
                   <li><strong>Samadhi</strong> - Union and supreme consciousness</li>
                 </ul>
 
+                {/* Application section */}
                 <h3 className="text-xl font-bold text-dharma-brown">Practical Applications</h3>
                 <p>
-                  The beauty of Patanjali's system lies in its practical applicability. Each limb builds upon the 
-                  previous one, creating a systematic approach to inner purification and spiritual growth. Modern 
+                  The beauty of Patanjali's system lies in its practical applicability. Each limb builds upon the
+                  previous one, creating a systematic approach to inner purification and spiritual growth. Modern
                   practitioners can benefit from this ancient wisdom by incorporating these principles into daily life.
                 </p>
 
+                {/* Final quote with background */}
                 <div className="bg-gradient-sacred p-6 rounded-lg text-center">
                   <p className="text-sanskrit text-lg text-krishna-primary glow-text mb-2">
                     तत्र स्थितौ यत्नोऽभ्यासः
@@ -90,6 +112,8 @@ const YogaPracticePatanjali = () => {
             </Card>
           </div>
         </section>
+
+        {/* Bottom site footer */}
         <Footer />
       </div>
     </>
